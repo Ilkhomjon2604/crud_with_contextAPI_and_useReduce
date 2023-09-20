@@ -35,7 +35,8 @@ export const  reducer = (state, action) =>{
 
             return  state.userName.length && state.userAge.length && state.userJob.length && state.userStatus.length?
              {...state, info : addUser, userName:'', userAge:'', userStatus:'', userJob: ''} : state
-
+        
+        // ON__UPDATE 
         case 'Update':
             return {
                 ...state, active: action.payload.data.id,
